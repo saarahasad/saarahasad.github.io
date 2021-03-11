@@ -47,20 +47,11 @@
             height: 180px;
         }
         
-        .navbar {
-            background-color: white !important;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            border-bottom: 1px solid #C0C0C0;
-            z-index: 999;
-        }
-        
         .h1-heading {
             width: 80%;
             text-align: center;
-            padding-left: 100px;
-            padding-right: 100px;
+            /* padding-left: 100px;
+            padding-right: 100px;*/
             padding-top: 30px;
             padding-bottom: 30px;
             margin: auto;
@@ -74,7 +65,19 @@
             padding-left: 35px;
         }
         
+        #about {
+            padding-top: 0px;
+        }
+        
         @media (min-width: 575px) {
+            .navbar {
+                background-color: white !important;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                border-bottom: 1px solid #C0C0C0;
+                z-index: 999;
+            }
             .navbar,
             .navdiv {
                 /*border-bottom: 1px solid black;
@@ -90,6 +93,9 @@
                 padding: 80px;
                 padding-right: 60px;
                 padding-left: 60px;
+            }
+            #about {
+                padding-top: 70px;
             }
         }
         
@@ -107,10 +113,8 @@
 background-color: white;">
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <div class="mx-auto d-sm-flex d-block flex-sm-nowrap" style="height: 100%;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse  justify-content" id="navbarSupportedContent">
+
+            <div class=" navbar-collapse  justify-content" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0  center">
                     <li class="nav-item  text-center">
                         <a class="nav-link" href="#about">ABOUT</a>
@@ -129,7 +133,7 @@ background-color: white;">
         </div>
     </nav>
 
-    <div id="about" class="section" style=" background-color: white; padding-top: 70px;">
+    <div id="about" class="section" style=" background-color: white;">
         <div class="text-wr">
             <div class="container introduction">
                 <div class="row center">
@@ -180,7 +184,8 @@ background-color: white;">
                             </ul>
 
                             <br />
-                            <p style="font-size:x-large; font-weight: bold;color: #0f4c75;width: fit-content;padding: 10px;">I can help.</p>
+                            <p style="font-size:x-large; font-weight: bold;color: #0f4c75;width: fit-content;padding: 10px;">
+                                I can help.</p>
                             <p style="padding-left: 10px; padding-right: 10px; font-size: larger;">
                                 If you have a project that my skill-set would be useful to, think you need my help with something or just fancy saying hello, then get in touch.
                             </p>
@@ -188,12 +193,14 @@ background-color: white;">
                             <p style="text-align: center;">
                                 <a href="mailto:saarahasad26@gmail.com">
                                     <button type="button" style="background-color: #0f4c75;color: rgb(197, 218, 225);  padding: 10px; padding-right: 20px;" class="btn btn-light">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
-                                          </svg>
-                                       <span style="padding-left: 10px; font-weight: bolder;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-envelope" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                                    </svg>
+                                    <span style="padding-left: 10px; font-weight: bolder;">
                                         MESSAGE ME
-                                       </span> </button>
+                                    </span> </button>
                                 </a>
                             </p>
                     </div>
@@ -231,7 +238,7 @@ background-color: white;">
                         The project was built to ease the arduous task of researching and reading lengthy judgments. To help find the required information at a glance, the text in a judgment document was categorized with the help of Conditional Random Fields (CRF) to fall into
                         one of the six predetermined categories. The training data consisted of documents from the rent control domain, and the sentences in these documents were annotated with the category they belonged to. The model was trained with
                         four sets of features to help categorize sentences in other judgments. Further, these documents were classified based on the final decision taken by the judge with the help of a neural network classifier. </p>
-                    
+
                 </div>
             </div>
             <br /><br />
@@ -314,7 +321,8 @@ background-color: white;">
                     <p class="work-title"> Paper Title: Assistive Technology to Expedite Judicial Procedure using Machine Learning and Natural Language Processing Techniques </p>
 
                     <p class="work-text">
-                        <a target="_blank" href="http://ijsart.com/Home/IssueDetail/31278" style="color: #0f4c75;">Read paper</a>
+                        <a target="_blank" href="http://ijsart.com/Home/IssueDetail/31278" style="color: #0f4c75;">Read
+                            paper</a>
                         </br>
                         </br>
                         <b>Abstract</b>
